@@ -1,0 +1,393 @@
+
+html {
+    font-size:62.5%;
+}
+
+body {
+    background-color: #fff;
+    color: #454747;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.date_link,.symbol{
+    color: #404242;
+}
+
+.date_link:hover,.symbol:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.back_link,.p_a{
+    color: #404242;
+    border-bottom: 0.05rem solid #C0C0C0;
+}
+
+h3 {
+    margin-bottom: 3rem;
+}
+
+.calendar_th {
+    height: 4rem;
+    width: 10rem;
+    text-align: center;
+    background-color: #488A99;
+    color: #fff;
+}
+
+.calendar_td {
+    height: 7rem;
+}
+
+.calendar_th:nth-of-type(1),
+.calendar_td:nth-of-type(1) {
+    color: red;
+}
+
+.calendar_th:nth-of-type(7),
+.calendar_td:nth-of-type(7) {
+    color: blue;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 1rem;
+    top: 1.8rem;
+}
+
+.content {
+    text-align: center;
+    padding: 3rem 3rem 0rem 3rem;
+}
+
+.content_admin{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+textarea{
+    width: 80%;
+}
+
+.links>a {
+    color: #636b6f;
+    padding: 0 2.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 3rem;
+}
+
+.month {
+    width: 12rem;
+    display: inline-block;
+}
+
+.today {
+    background: rgba(28, 169, 97, 0.1);
+}
+
+.data_exist {
+    background: rgba(35, 210, 216, 0.87);
+}
+
+.title:hover{
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+}
+
+.calendar_box{
+    padding: 0rem;
+}
+
+.date{
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.show_message{
+    white-space: pre-wrap;
+}
+
+.stack,.reflection{
+    display: inline-block;
+    border-bottom: 0.05rem solid #C0C0C0;
+}
+
+li{
+    list-style: none;
+}
+
+.list{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.list_a{
+    color: #007bfff2;
+}
+    
+.list_tr{
+    border-bottom: solid 1px #eee; 
+}
+    
+.list_th,.list_td{
+    text-align: center;
+    padding: 15px 0;
+    height: 4rem;
+    width: 10rem;
+}
+
+.back_button{
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+}
+
+.asterisk{
+    color: black;
+    font-size: 2.5rem;
+}
+
+.aste{
+    float: left;
+    margin-top: 1rem;
+    color: rgb(88, 88, 88);
+}
+
+.user_name{
+    font-size: 1.7rem;
+}
+
+.post_box{
+    border: solid 1px #b7b7b7;
+    border-radius: 0.5rem;
+    margin: 2rem 0 2rem 0; 
+}
+
+.post_box div{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.post_date{
+    font-size: 1.7rem;
+}
+
+.admin_page_month{
+    margin-bottom: 2rem;
+}
+
+.top_message{
+    margin-bottom: 2rem;
+}
+
+.erro_message{
+    color: red;
+}
+
+.success_message{
+    color: #32a8ff;
+}
+
+.twitter_div{
+    border-top: 0.1rem solid #dadada;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.twitter{
+    background-color: #008DDE;
+    
+    display: inline;
+    position: relative;
+    font-family: Arial;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1rem 5rem;
+    margin: 1rem auto 0 auto;
+}
+
+.twitter:active{
+    top: 0.2rem;
+    box-shadow: 0 0.2rem 0 #0078BD;
+}
+
+.twitter:hover{
+    background-color: #1397D8;
+    color: white;
+    text-decoration: none;
+}
+
+.register,.login,.sendurl,.resetpass{
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+}
+
+.drawer-navbar {
+    height: 5.55rem;
+    background-color: #488A99;
+    border-bottom: none !important
+}
+
+.admin_nav{
+    height: 5.55rem;
+    background-color: rgb(243, 67, 67);
+    border-bottom: none !important
+}
+
+.title{
+    line-height: 5.55rem !important;
+    color: #fff;
+    font-family: Roboto monospace;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.drawer-nav{
+    padding-top: 5.5rem;
+}
+
+.drawer-navbar-header{
+    height: 0;
+    border-bottom: none !important
+}
+
+button:focus{
+    outline: none;
+}
+
+.drawer-hamburger{
+    margin-right: 1.5rem;
+    color: #fff;
+}
+
+.drawer-menu-item{
+    font-size: 1.2rem;
+}
+
+.user_delete{
+    color: #757575;
+}
+
+@media screen and (max-width: 768px){
+    .drawer-nav{
+        padding-top: 5.5rem !important;
+    }
+
+    .dropdown-menu{
+        border: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .calendar_box{
+        padding: 0rem 6rem;
+    }
+
+    .calendar_td {
+        height: 8rem;
+    }
+
+    .navbar{
+        padding: 1.5rem 1rem;
+    }
+
+    .content {
+        padding: 3rem 4rem 0rem 4rem;
+    }
+
+    .content_admin{
+        width: 70%;
+    }
+
+    textarea{
+        width: auto;
+    }
+
+    .drawer-navbar-header{
+        height: 0;
+    }
+
+    .drawer-nav{
+        padding-top: 5.5rem !important;
+    }
+    
+    .dropdown-menu{
+        border: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .calendar_box{
+        padding: 0rem 12rem;
+    }
+
+    .calendar_td {
+        height: 9rem;
+    }
+
+    .navbar{
+        padding: 2rem 1rem;
+    }
+
+    .content {
+        padding: 3rem 5rem 0rem 5rem;
+    }
+
+    .content_admin{
+        width: 55%;
+    }
+
+    textarea{
+        width: auto;
+    }
+
+    .drawer-container {
+        max-width: 80%;
+    }
+
+    .drawer-navbar-header{
+        height: 0;
+    }
+
+    .drawer-nav{
+        height: 0 !important;
+    }
+
+    .drawer-menu-item{
+        line-height: 5.5rem !important;
+        color: #fff;
+        font-size: 1.3rem;
+        padding: 1.5rem;
+    }
+
+    .drawer-menu-item:hover{
+        color: #fff;
+    }
+}
