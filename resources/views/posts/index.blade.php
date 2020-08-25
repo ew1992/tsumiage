@@ -46,5 +46,9 @@
         <br/><br/><br/>
         <input type="submit" name="btn_submit" class="btn btn-info" value="更新する">
     </form>
+    <br>
+    @if(!empty($userinfo->twitter_id))
+        <a class="twitter-share-button" href="https://twitter.com/share?hashtags=今日の積み上げ&text=<?php echo $post->stack_thing; ?>" target="_blank" data-dnt="true">Tweet</a>
+    @endif
 @endif
 @endsection

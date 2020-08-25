@@ -25,7 +25,7 @@ class PostRequest extends FormRequest
     {
         return [
             'stack_thing' => 'required',
-            'reflection_point' => 'required',
+            /*'reflection_point' => 'required',*/
         ];
     }
     
@@ -33,7 +33,7 @@ class PostRequest extends FormRequest
     {
         return [
             'stack_thing.required' => '今日の積み上げを入力して下さい。',
-            'reflection_point.required' => '今日の反省点/メモを入力して下さい。',
+            /*'reflection_point.required' => '今日の反省点/メモを入力して下さい。',*/
         ];
     }
 }

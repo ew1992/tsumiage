@@ -11,7 +11,8 @@ class Post extends Model
         'reflection_point',
         'user_id',
         'created_at',
-        'updated_at'
+        'updated_at',
+        'private_flag'
         
     ];
 

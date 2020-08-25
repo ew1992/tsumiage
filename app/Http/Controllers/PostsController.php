@@ -11,6 +11,7 @@ use App\Facades\Postinfo;
 use App\Post;
 use App\User;
 use Auth;
+use DB;
 
 class PostsController extends Controller
 {
@@ -40,13 +41,15 @@ class PostsController extends Controller
         $query->where('user_id', Auth::id());
         $query->whereDate('created_at', $today);
         $post = $query->first();
+        $userid = Auth::id();
+        $userinfo = DB::table('users')->where('id', Auth::id())->first();
 
         //データ有無確認
         if (!empty($post)) {
-            return view('posts.index', ['post' => $post]);
+            return view('posts.index', ['post' => $post, 'userid' => $userid, 'userinfo' => $userinfo]);
         } else {
             $post = "none";
-            return view('posts.index', ['post' => $post]);
+            return view('posts.index', ['post' => $post, 'userid' => $userid, 'userinfo' => $userinfo]);
         }
     }
 
@@ -55,7 +58,9 @@ class PostsController extends Controller
     {
         $post = new Post();
         $post->stack_thing = nl2br($request->stack_thing);
-        $post->reflection_point = nl2br($request->reflection_point);
+        if(!empty($request->reflection_point)){
+            $post->reflection_point = nl2br($request->reflection_point);
+        }
         $post->user_id = Auth::id();
 
         if ($request->check == 'check') {
