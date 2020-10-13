@@ -13,6 +13,10 @@
     // ログイン認証関連
 Auth::routes([]);
 
+Route::get('home', function () {
+    return view('home');
+});
+
 Route::get('/login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
