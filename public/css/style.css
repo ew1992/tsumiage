@@ -74,7 +74,7 @@ h3 {
 
 .content {
     text-align: center;
-    padding: 3rem 3rem 0rem 3rem;
+    padding: 8.55rem 3rem 0rem 3rem;
 }
 
 .content_admin{
@@ -252,13 +252,14 @@ li{
 .drawer-navbar {
     height: 5.55rem;
     background-color: #488A99;
-    border-bottom: none !important
+    border-bottom: none !important;
+    position: fixed;
 }
 
 .admin_nav{
     height: 5.55rem;
     background-color: rgb(243, 67, 67);
-    border-bottom: none !important
+    border-bottom: none !important;
 }
 
 .title{
@@ -275,7 +276,7 @@ li{
 
 .drawer-navbar-header{
     height: 0;
-    border-bottom: none !important
+    border-bottom: none !important;
 }
 
 button:focus{
@@ -295,13 +296,99 @@ button:focus{
     color: #757575;
 }
 
-@media screen and (max-width: 768px){
+.flexcontainer{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.flexitem{
+    flex-basis: 50%;
+    padding-bottom: 3rem;
+}
+
+.item1{
+    order: 2;
+}
+
+.item2{
+    order: 1;
+}
+
+.top-img{
+    height: auto;
+    width:65%;
+    border-radius: 0.5rem;
+}
+
+.home-section{
+    padding-bottom: 3rem;
+    padding-top: 4rem;
+}
+
+.home-section h1{
+    font-weight: bold;
+    font-size: 3.3rem;
+    margin-bottom: 3rem;
+}
+
+.home-section h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #5d5d5d;
+}
+
+.home-section h3{
+    color: #6B6B6B;
+}
+
+.registerbtn{
+    display: inline-block;
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+}
+
+.registerbtn div{
+    font-size: 3rem;
+    color: white;
+}
+
+.subheading{
+    border-left: #488A99 0.4rem solid;
+    margin-bottom: 3rem;
+}
+
+.subheading p{
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 1rem;
+    color: #6B6B6B;
+}
+
+footer{
+    background-color: #d8d8d8;
+    text-align: center;
+    height: 3.5rem;
+    align-items: center;
+    display: flex;
+}
+
+.footer{
+    margin: 0 auto;
+    color: #545454;
+}
+
+@media screen and (max-width: 767px){
     .drawer-nav{
         padding-top: 5.5rem !important;
     }
 
     .dropdown-menu{
         border: none;
+    }
+
+    .flexcontainer{
+        display: unset;
     }
 }
 
@@ -319,7 +406,7 @@ button:focus{
     }
 
     .content {
-        padding: 3rem 4rem 0rem 4rem;
+        padding: 8.55rem 4rem 0rem 4rem;
     }
 
     .content_admin{
@@ -357,7 +444,7 @@ button:focus{
     }
 
     .content {
-        padding: 3rem 5rem 0rem 5rem;
+        padding: 8.55rem 5rem 0rem 5rem;
     }
 
     .content_admin{
@@ -390,4 +477,5 @@ button:focus{
     .drawer-menu-item:hover{
         color: #fff;
     }
+
 }
