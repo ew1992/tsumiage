@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta property="og:title" content="ページのタイトル" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{url('/')}}" />
+    <meta property="og:image" content="{{url('/')}}/img/logo.png" />
+    <meta property="og:site_name" content="#今日の積み上げ" />
+    <meta property="og:description" content="ページのディスクリプション" />
+    <meta name="twitter:card" content="summary" />
 
     <title>#今日の積み上げ</title>
 
