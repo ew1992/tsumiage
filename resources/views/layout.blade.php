@@ -36,6 +36,9 @@
                     <!-- Authentication Links -->
                     @guest
                         <li>
+                            <a class="drawer-menu-item" href="{{ route('contact.index') }}">お問い合わせ</a>
+                        </li>
+                        <li>
                             <a class="drawer-menu-item" href="{{ route('login') }}">ログイン</a>
                         </li>
                         @if (Route::has('register'))
@@ -45,12 +48,15 @@
                         @endif
                     @else
                         @if(url()->current() == url("/"))
+                            <li><a class="drawer-menu-item" href="{{ route('contact.index') }}">お問い合わせ</a></li>
                             <li><a class="drawer-menu-item" href="/calendar">一覧表示</a></li>
                             <li><a class="drawer-menu-item" href="/list">All Members</a></li>
                         @elseif(url()->current() == url("/calendar"))
+                            <li><a class="drawer-menu-item" href="{{ route('contact.index') }}">お問い合わせ</a></li>
                             <li><a class="drawer-menu-item" href="/">入力画面</a></li>
                             <li><a class="drawer-menu-item" href="/list">All Members</a></li>
                         @else
+                            <li><a class="drawer-menu-item" href="{{ route('contact.index') }}">お問い合わせ</a></li>
                             <li><a class="drawer-menu-item" href="/">入力画面</a></li>
                             <li><a class="drawer-menu-item" href="/calendar">一覧表示</a></li>
                             <li><a class="drawer-menu-item" href="/list">All Members</a></li>

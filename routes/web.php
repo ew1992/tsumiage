@@ -10,12 +10,22 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-    // ログイン認証関連
-Auth::routes([]);
+//入力ページ
+Route::get('/contact', 'ContactController@index')->name('contact.index');
 
+//確認ページ
+Route::post('/contact/confirm', 'ContactController@confirm')->name('contact.confirm');
+
+//送信完了ページ
+Route::post('/contact/thanks', 'ContactController@send')->name('contact.send');
+
+//ホーム画面
 Route::get('home', function () {
     return view('home');
 });
+
+// ログイン認証関連
+Auth::routes([]);
 
 Route::get('/login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
