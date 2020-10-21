@@ -28,19 +28,19 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">お問い合わせ内容</label>
+                            <label for="body" class="col-md-4 col-form-label text-md-right">お問い合わせ内容</label>
                             {!! nl2br(e($inputs['body'])) !!}
                             <div class="col-md-6">
-                                <input id="body" type="hidden" class="form-control" name="body" value="{{ $inputs['name'] }}">
+                                <input id="body" type="hidden" class="form-control" name="body" value="{{ $inputs['body'] }}">
                             </div>
                         </div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 mr-auto ml-auto">
-                                <button type="submit" name="action" value="back">
+                                <button type="submit" class="btn btn-danger register" name="action" value="back">
                                     入力内容修正
-                                </button>
-                                <button type="submit" class="btn btn-info register">
+                                </button><br><br>
+                                <button type="submit" class="btn btn-info register" name="action" value="submit">
                                     送信
                                 </button>
                             </div>
