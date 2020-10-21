@@ -61,6 +61,7 @@
                                 {{ Auth::user() -> name }} <span class="drawer-caret"></span>
                             </a>
                             <ul class="drawer-dropdown-menu dropdown-menu">
+                                <li><a class="drawer-dropdown-menu-item" href="{{ route('contact.index') }}">お問い合わせ</a></li>
                                 <li><a class="drawer-dropdown-menu-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();">
