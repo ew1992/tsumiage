@@ -36,6 +36,9 @@
                     <!-- Authentication Links -->
                     @guest
                         <li>
+                            <a class="drawer-menu-item" href="{{ route('contact.index') }}">お問い合わせ</a>
+                        </li>
+                        <li>
                             <a class="drawer-menu-item" href="{{ route('login') }}">ログイン</a>
                         </li>
                         @if (Route::has('register'))
